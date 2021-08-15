@@ -5,6 +5,8 @@ import Header from '../components/Header';
 import LargeCard from '../components/LargeCard';
 import { MediumCard } from '../components/MediumCard';
 import SmallCard from '../components/SmallCard';
+import XtraLargeCard from '../components/XtraLargeCard';
+import { discover } from '../data';
 
 export default function Home({ exploreData, cardData }) {
   return (
@@ -51,6 +53,15 @@ export default function Home({ exploreData, cardData }) {
             description='Wishlist curated by Airbnb'
             btnText='Get Inspired'
           />
+        </section>
+
+        <section className='mb-24'>
+          <h2 className='text-4xl font-bold'>Discover Experiences</h2>
+          <h3 className='text-2xl mt-2 mb-4'>
+            Unique activities with local experts – in person or online.
+          </h3>
+
+          <XtraLargeCard {...discover} />
         </section>
       </main>
 
